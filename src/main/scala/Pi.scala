@@ -6,8 +6,8 @@ import scala.concurrent.duration._
 
 object Pi extends App {
 
-  calculate(nrOfWorkers = 4, nrOfElements = 44000, nrOfMessages = 44000)
-
+ // calculate(nrOfWorkers = 4, nrOfElements = 44000, nrOfMessages = 44000)
+println("PI")
   sealed trait PiMessage
   case object Calculate extends PiMessage
   case class Work(start: Int, nrOfElements: Int) extends PiMessage
